@@ -7,6 +7,7 @@
     "dev": "concurrently \"yarn run dev:css\" \"remix dev\"",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "start": "remix-serve build",
+    "prepare": "husky install",
     "typecheck": "tsc -b"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
+    "husky": "^8.0.3",
     "@remix-run/dev": "^1.10.1",
     "@remix-run/eslint-config": "^1.10.1",
     "@types/react": "^18.0.25",
