@@ -6,7 +6,7 @@ export default function Index() {
         <li>
           <a
             target="_blank"
-            href=
+            href="https://remix.run/tutorials/blog"
             rel="noreferrer"
           >
             15m Quickstart Blog Tutorial
