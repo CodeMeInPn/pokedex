@@ -8,5 +8,3 @@ node_modules
 .vscode
 /app/styles
 /db-data
-/.yarn
-.yarnrc.yml
