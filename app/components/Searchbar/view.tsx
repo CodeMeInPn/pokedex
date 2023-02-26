@@ -14,7 +14,7 @@ const SearchbarView = () => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative mb-4">
       <div className="relative">
         <Form method="post" onSubmit={(e) => console.log(e.currentTarget)}>
           <Input
