@@ -13,9 +13,7 @@ const InputView: FC<InputViewProps> = ({
       <input
         onBlur={onBlur}
         onFocus={onFocus}
-        className={`w-full text-[10px] py-1 px-6 border border-lightGray bg-white rounded-lg outline-none placeholder:text-mediumGray transition-all ${
-          isActive ? "placeholder:text-left" : "placeholder:text-center"
-        }`}
+        className={`w-full h-full text-[10px] py-1 pl-9 bg-white rounded-[16px] outline-none placeholder:text-gray-300 shadow-inner`}
         type="text"
         placeholder={placeholder}
       />

@@ -3,10 +3,8 @@ module.exports = {
   content: ["./app/**/*.{ts,tsx}"],
   theme: {
     colors: {
-      background: "#F7F7F7",
       bug: "#A7B723",
       dark: "#75574C",
-      darkGray: "#212121",
       dragon: "#7037FF",
       electric: "#F9CF30",
       fairy: "#E69EAC",
@@ -17,8 +15,6 @@ module.exports = {
       grass: "#74CB48",
       ground: "#DEC16B",
       ice: "#9AD6DF",
-      lightGray: "#E0E0E0",
-      mediumGray: "#666666",
       normal: "#AAA67F",
       poison: "#A43E9E",
       psychic: "#FB5584",
@@ -26,6 +22,22 @@ module.exports = {
       steel: "#B7B9D0",
       water: "#6493EB",
       white: "#FFFFFF",
+    },
+    extend: {
+      colors: {
+        primary: "#DC0A2D",
+        gray: {
+          100: "#EFEFEF",
+          200: "#E0E0E0",
+          300: "#666666",
+          400: "#212121",
+          500: "#1D1D1D",
+        },
+      },
+      boxShadow: {
+        inner: "inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25)",
+        outer: "0px 1px 3px 1px rgba(0, 0, 0, 0.2)",
+      },
     },
   },
 };

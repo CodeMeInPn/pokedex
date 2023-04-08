@@ -8,7 +8,7 @@ export async function action() {
 
 export default function Index() {
   return (
-    <section className="mx-4 my-6">
+    <section className="m-1">
       <Header />
       <Searchbar />
       <PokemonsList />
