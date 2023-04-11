@@ -23,7 +23,7 @@ export default function Index() {
   const { pokemons } = useLoaderData<LoaderData>();
   console.log(pokemons);
   return (
-    <section className="mx-4 my-6">
+    <section className="m-1">
       <Header />
       <Searchbar />
       <PokemonsList />
