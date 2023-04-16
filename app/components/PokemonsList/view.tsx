@@ -8,7 +8,12 @@ const PokemonsListView: FC<PokemonsListViewProps> = ({ pokemons }) => {
       {pokemons.map((pokemon) => {
         const { id, name, sprites } = pokemon;
         return (
-          <PokemonSmallCard key={name} id={id} name={name} sprites={sprites} />
+          <div
+            key={name}
+            className="w-full flex flex-1 justify-center items-center"
+          >
+            <PokemonSmallCard id={id} name={name} sprites={sprites} />
+          </div>
         );
       })}
     </section>
