@@ -1,4 +1,8 @@
+import type { Sprites } from "~/types/types";
+
 export interface PokemonSmallCardProps {
-  pokemon: any;
+  id: number;
+  name: string;
+  sprites: Sprites;
 }
 export interface PokemonSmallCardViewProps extends PokemonSmallCardProps {}

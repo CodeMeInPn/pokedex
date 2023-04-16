@@ -3,7 +3,7 @@ import Header from "~/components/Header";
 import PokemonsList from "~/components/PokemonsList";
 import Searchbar from "~/components/Searchbar";
 import { LIMIT, OFFSET } from "~/utils/constants";
-import { fetchData } from "~/utils/fetchData";
+import { fetchPokemons } from "~/utils/fetchData";
 
 type LoaderData = {
   pokemons: Array<any>;
@@ -18,7 +18,9 @@ export async function loader() {
   if (!url) throw new Error("There's no API URL provided!");
 
   // TBD: PAGINATION
-  const pokemons = await fetchData(`${url}?limit=${LIMIT}&offset=${OFFSET}`);
+  const pokemons = await fetchPokemons(
+    `${url}?limit=${LIMIT}&offset=${OFFSET}`
+  );
 
   return { pokemons };
 }
