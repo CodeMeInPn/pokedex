@@ -1,11 +1,11 @@
 import type { FC } from "react";
 import type { PokemonSmallCardViewProps } from "./types";
 
-const PokemonSmallCardView: FC<PokemonSmallCardViewProps> = () => {
+const PokemonSmallCardView: FC<PokemonSmallCardViewProps> = ({ pokemon }) => {
   return (
     <article className="relative flex flex-col justify-between w-[104px] h-[108px] shadow-outer rounded overflow-hidden">
       <div className="flex justify-end">
-        <p className="pt-1 px-2 text-[8px] text-gray-300">#002</p>
+        <p className="pt-1 px-2 text-[8px] text-gray-300">{pokemon.name}</p>
       </div>
       <div className="absolute top-4 left-4">
         <div className="flex justify-center">
